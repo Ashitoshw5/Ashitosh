@@ -22,4 +22,14 @@ public class UserServiceImpl implements UserService{
 		return al;
 	}
 
+	
+	
+	@Override
+	public List<User> getUserByCity(String city) {
+		
+		List<User> list = userRepo.findByCity(city);
+		
+		return list;
+	}
+
 }

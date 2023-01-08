@@ -9,5 +9,7 @@ public interface UserService {
 	//public List<User> saveUser(List<User> user);
 
 	public List<User> saveUser(List<User> user);
+	
+	public List<User> getUserByCity(String city);
 
 }
